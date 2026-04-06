@@ -11,8 +11,8 @@ const {
 } = require('../controllers/produitLongrichController');
 
 const { 
-  createProprietaire, getAllProprietaires, toggleProprietaireActive, 
-  deleteProprietaire, updateProprietaire, getProprietaireById 
+  getAllProprietaires, getProprietaireById, createProprietaire, 
+  updateProprietaire, deleteProprietaire, toggleActive 
 } = require('../controllers/proprietairesController');
 
 const { createBoutique, getAllBoutiques, toggleBoutiqueActive } = require('../controllers/boutiquesController');
@@ -56,13 +56,13 @@ router.delete('/produits/:id', deleteProduit);
 router.post('/produits/:id/promo', togglePromo);
 
 // 👥 PROPRIÉTAIRES
-router.post('/proprietaires', uploadFiles, createProprietaire);
+// Routes Propriétaires (après routes produits)
 router.get('/proprietaires', getAllProprietaires);
 router.get('/proprietaires/:id', getProprietaireById);
+router.post('/proprietaires', uploadFiles, createProprietaire);
 router.put('/proprietaires/:id', uploadFiles, updateProprietaire);
-router.post('/proprietaires/:id/toggle', toggleProprietaireActive);
 router.delete('/proprietaires/:id', deleteProprietaire);
-
+router.post('/proprietaires/:id/toggle', toggleActive);
 // 🏪 BOUTIQUES
 router.get('/boutiques', getAllBoutiques);
 router.post('/boutiques', createBoutique);
