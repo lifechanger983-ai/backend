@@ -15,7 +15,7 @@ const {
   updateProprietaire, deleteProprietaire, toggleActive 
 } = require('../controllers/proprietairesController');
 
-const { createBoutique, getAllBoutiques, toggleBoutiqueActive } = require('../controllers/boutiquesController');
+const { createBoutique, getAllBoutiques, toggleBoutiqueActive, deleteBoutique } = require('../controllers/boutiquesController');
 
 // ✅ SERVICES VAGUE 4 - IMPORTS
 const { 
@@ -67,6 +67,9 @@ router.post('/proprietaires/:id/toggle', toggleActive);
 router.get('/boutiques', getAllBoutiques);
 router.post('/boutiques', createBoutique);
 router.post('/boutiques/:id/toggle', toggleBoutiqueActive);
+
+// Dans la section BOUTIQUES, ajoutez :
+router.delete('/boutiques/:id', deleteBoutique);  // ✅ NOUVELLE ROUTE
 
 // ✅ SERVICES VAGUE 4 - VOTRE uploadFiles (fields)
 // ✅ REMPLACEZ UNIQUEMENT les routes services :

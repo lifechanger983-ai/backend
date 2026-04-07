@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
-const transporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({  // ← FIXED HERE
   host: process.env.EMAIL_HOST,
   port: process.env.EMAIL_PORT,
   secure: false,
@@ -13,9 +13,27 @@ const transporter = nodemailer.createTransport({
 });
 
 const sendProprietaireCredentials = async (email, nom, telephone, password, urlLogin) => {
+  // 🔍 DEBUG COMPLET
+  console.log('🚀 EMAIL DEBUG:', { 
+    email, 
+    nom, 
+    typeof_email: typeof email, 
+    emailLength: email?.length,
+    emailTrimmed: email?.trim(),
+    urlLogin 
+  });
+  
+  // VALIDATION STRICTE
+  if (!email || typeof email !== 'string' || email.trim() === '') {
+    console.log('❌ EMAIL INVALID, skip');
+    return { skipped: true, reason: 'Email vide ou invalide' };
+  }
+
+  const cleanEmail = email.trim();
+  
   const mailOptions = {
     from: `"Mega Ecommerce" <${process.env.EMAIL_USER}>`,
-    to: email,
+    to: cleanEmail,
     subject: '✅ Vos identifiants Boutique Mega Ecommerce',
     html: `
     <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -47,7 +65,23 @@ const sendProprietaireCredentials = async (email, nom, telephone, password, urlL
     `
   };
 
-  return transporter.sendMail(mailOptions);
+  // 🔍 LOG FINAL AVANT ENVOI
+  console.log('📧 MAILOPTIONS.to:', mailOptions.to);
+  console.log('📧 MAILOPTIONS.from:', mailOptions.from);
+  console.log('📧 SMTP CONFIG:', {
+    host: process.env.EMAIL_HOST,
+    port: process.env.EMAIL_PORT,
+    user: process.env.EMAIL_USER ? 'OK' : 'MISSING'
+  });
+
+  try {
+    const result = await transporter.sendMail(mailOptions);
+    console.log('✅ EMAIL ENVOYÉ:', result.messageId);
+    return { success: true, messageId: result.messageId };
+  } catch (error) {
+    console.error('❌ EMAIL ERROR:', error.code, error.message);
+    return { error: error.message, code: error.code };
+  }
 };
 
-module.exports = { sendProprietaireCredentials };
+module.exports = { sendProprietaireCredentials, transporter };

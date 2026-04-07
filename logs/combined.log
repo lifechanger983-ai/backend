@@ -150,3 +150,86 @@
 {"level":"info","message":"✅ Propriétaires: 1","timestamp":"2026-04-06T10:45:50.276Z"}
 {"duration":1099.07,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"DELETE","responseSize":"23","status":200,"timestamp":"2026-04-06T10:52:36.813Z","url":"/api/admin/services/b9b36a50-6d03-47a1-96da-a333bc7aa0b1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
 {"duration":5475,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"POST","responseSize":"341","status":201,"timestamp":"2026-04-06T10:53:18.658Z","url":"/api/admin/services","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 1","timestamp":"2026-04-06T17:17:34.447Z"}
+{"level":"info","message":"✅ Propriétaires: 1","timestamp":"2026-04-06T17:17:34.458Z"}
+{"duration":815.06,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"POST","responseSize":"28","status":500,"timestamp":"2026-04-06T17:17:47.977Z","url":"/api/admin/proprietaires","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"duration":2287.42,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"POST","responseSize":"28","status":500,"timestamp":"2026-04-06T17:18:27.449Z","url":"/api/admin/proprietaires","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 1","timestamp":"2026-04-06T17:24:16.839Z"}
+{"level":"info","message":"✅ Propriétaires: 1","timestamp":"2026-04-06T17:24:16.845Z"}
+{"duration":2708.28,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"POST","responseSize":"39","status":500,"timestamp":"2026-04-06T17:25:04.717Z","url":"/api/admin/proprietaires","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T17:27:01.939Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T17:27:02.005Z"}
+{"level":"info","message":"✅ DELETE IMAGE: mega_ecommerce/images/nagpclonxib2zk4opcwb","timestamp":"2026-04-06T17:27:25.112Z"}
+{"level":"info","message":"✅ Propriétaire supprimé: Michel","timestamp":"2026-04-06T17:27:25.352Z"}
+{"duration":4227.26,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"DELETE","responseSize":"37","status":200,"timestamp":"2026-04-06T17:27:25.355Z","url":"/api/admin/proprietaires/c7cbdf35-c81a-41f3-9e6c-102962369e31","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 1","timestamp":"2026-04-06T17:27:25.440Z"}
+{"duration":3408.18,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"POST","responseSize":"39","status":500,"timestamp":"2026-04-06T17:29:04.625Z","url":"/api/admin/proprietaires","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T17:40:10.522Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T17:40:10.539Z"}
+{"level":"info","message":"✅ DELETE IMAGE: mega_ecommerce/images/mvp31uelmxirixo4mimq","timestamp":"2026-04-06T17:40:28.910Z"}
+{"level":"info","message":"✅ Propriétaire supprimé: Michel","timestamp":"2026-04-06T17:40:29.007Z"}
+{"duration":2072.49,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"DELETE","responseSize":"37","status":200,"timestamp":"2026-04-06T17:40:29.009Z","url":"/api/admin/proprietaires/783c85cb-bc01-467c-8b87-8ded650f02ff","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 1","timestamp":"2026-04-06T17:40:29.096Z"}
+{"duration":2017.51,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"POST","responseSize":"39","status":500,"timestamp":"2026-04-06T17:41:20.088Z","url":"/api/admin/proprietaires","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T17:49:36.987Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T17:49:37.034Z"}
+{"level":"info","message":"✅ DELETE IMAGE: mega_ecommerce/images/uudl65gmcew4unilhjwo","timestamp":"2026-04-06T17:49:44.009Z"}
+{"level":"info","message":"✅ Propriétaire supprimé: Michel","timestamp":"2026-04-06T17:49:44.091Z"}
+{"duration":1805.78,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"DELETE","responseSize":"37","status":200,"timestamp":"2026-04-06T17:49:44.093Z","url":"/api/admin/proprietaires/d81d5c91-be9d-4923-91b5-ab316e241408","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 1","timestamp":"2026-04-06T17:49:44.201Z"}
+{"duration":656.92,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"POST","responseSize":"35","status":500,"timestamp":"2026-04-06T17:50:06.549Z","url":"/api/admin/proprietaires","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T17:50:20.584Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T17:50:20.590Z"}
+{"level":"info","message":"✅ Propriétaire supprimé: ONANA","timestamp":"2026-04-06T17:50:42.214Z"}
+{"level":"info","message":"✅ Propriétaires: 1","timestamp":"2026-04-06T17:50:42.292Z"}
+{"duration":2488.84,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"POST","responseSize":"35","status":500,"timestamp":"2026-04-06T17:52:00.744Z","url":"/api/admin/proprietaires","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T18:11:33.904Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T18:11:33.954Z"}
+{"level":"info","message":"✅ DELETE IMAGE: mega_ecommerce/images/rlpsymdacofdmfkbo2nu","timestamp":"2026-04-06T18:11:47.941Z"}
+{"level":"info","message":"✅ Propriétaire supprimé: onana","timestamp":"2026-04-06T18:11:48.029Z"}
+{"duration":1536.63,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"DELETE","responseSize":"37","status":200,"timestamp":"2026-04-06T18:11:48.031Z","url":"/api/admin/proprietaires/c790027e-e69d-47fd-b4c2-04b54a406730","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 1","timestamp":"2026-04-06T18:11:48.107Z"}
+{"duration":5241.89,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"POST","responseSize":"33","status":500,"timestamp":"2026-04-06T18:13:32.732Z","url":"/api/admin/proprietaires","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:28:56.301Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:28:56.356Z"}
+{"level":"info","message":"✅ DELETE IMAGE: mega_ecommerce/images/btag4qch5ex4txnfppf2","timestamp":"2026-04-06T23:29:13.920Z"}
+{"level":"info","message":"✅ Propriétaire supprimé: ONANA","timestamp":"2026-04-06T23:29:14.006Z"}
+{"duration":2609.4,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"DELETE","responseSize":"37","status":200,"timestamp":"2026-04-06T23:29:14.009Z","url":"/api/admin/proprietaires/4458d5fd-b013-4284-bfb3-7e3e141b7afa","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 1","timestamp":"2026-04-06T23:29:14.107Z"}
+{"duration":2090.65,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"POST","responseSize":"41","status":500,"timestamp":"2026-04-06T23:30:29.558Z","url":"/api/admin/proprietaires","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:39:14.870Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:39:14.890Z"}
+{"level":"info","message":"✅ DELETE IMAGE: mega_ecommerce/images/djfgcxg07yq2w7ecewck","timestamp":"2026-04-06T23:39:29.873Z"}
+{"level":"info","message":"✅ Propriétaire supprimé: ONANA","timestamp":"2026-04-06T23:39:29.935Z"}
+{"duration":1415.83,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"DELETE","responseSize":"37","status":200,"timestamp":"2026-04-06T23:39:29.937Z","url":"/api/admin/proprietaires/36635d86-5f16-41e5-8064-57df89a47213","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 1","timestamp":"2026-04-06T23:39:29.991Z"}
+{"duration":5210.11,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"POST","responseSize":"581","status":201,"timestamp":"2026-04-06T23:40:58.796Z","url":"/api/admin/proprietaires","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:40:58.862Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:41:39.606Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:41:39.617Z"}
+{"level":"error","message":"❌ Erreur createBoutique: email?.trim is not a function","stack":"TypeError: email?.trim is not a function\n    at sendProprietaireCredentials (D:\\PROMO LONGRICH\\nouveau fichier du projet\\backend\\utils\\sendEmail.js:22:26)\n    at createBoutique (D:\\PROMO LONGRICH\\nouveau fichier du projet\\backend\\controllers\\boutiquesController.js:36:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2026-04-06T23:42:00.343Z"}
+{"duration":94.2,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"POST","responseSize":"37","status":500,"timestamp":"2026-04-06T23:42:00.345Z","url":"/api/admin/boutiques","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:47:15.607Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:47:15.664Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:49:09.364Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:49:18.036Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:49:33.210Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:49:49.573Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:50:40.972Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:50:40.978Z"}
+{"duration":4643.5,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"PUT","responseSize":"477","status":200,"timestamp":"2026-04-06T23:51:03.290Z","url":"/api/admin/proprietaires/6abe0668-dfa9-44aa-8467-9f2f7e06fa70","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:51:03.323Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:51:10.842Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:51:10.849Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:57:21.534Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:57:21.645Z"}
+{"level":"info","message":"🗑️ Boutique supprimée: onana (mich)","timestamp":"2026-04-06T23:57:39.213Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:57:39.294Z"}
+{"level":"info","message":"✅ Boutique créée: NST (mich)","timestamp":"2026-04-06T23:59:21.286Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-06T23:59:21.349Z"}
+{"level":"info","message":"🗑️ Boutique supprimée: NST (mich)","timestamp":"2026-04-07T00:08:58.801Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-07T00:08:58.880Z"}
+{"level":"info","message":"📧 Email boutique envoyé à lifechanger983@gmail.com","timestamp":"2026-04-07T00:09:26.857Z"}
+{"level":"info","message":"✅ Boutique créée: ONANA (mich)","timestamp":"2026-04-07T00:09:26.858Z"}
+{"duration":6931.06,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"POST","responseSize":"472","status":201,"timestamp":"2026-04-07T00:09:26.863Z","url":"/api/admin/boutiques","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-07T00:09:26.935Z"}

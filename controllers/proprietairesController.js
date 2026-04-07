@@ -1,10 +1,12 @@
-const { Proprietaire } = require('../models');
+const { Proprietaire, Boutique } = require('../models'); // ✅ AJOUT Boutique
 const { uploadToCloudinary, deleteCloudinaryFile, getPublicIdFromUrl } = require('../config/cloudinary');
-const { sendEmail } = require('../utils/sendEmail');
+const { sendProprietaireCredentials } = require('../utils/sendEmail')
 const logger = require('../config/logger');
 const bcrypt = require('bcryptjs');
 
+
 // ✅ REMPLACÉ - Nouvelle version
+// ✅ REMPLACÉ - Version SIMPLIFIÉE SANS Boutique
 const createProprietaire = async (req, res) => {
   try {
     console.log('📥 BODY:', req.body);
@@ -20,27 +22,58 @@ const createProprietaire = async (req, res) => {
     const defaultPassword = generateSecurePassword();
     const hashedPassword = await bcrypt.hash(defaultPassword, 12);
 
+    // ✅ FIX: Email optionnel + validation stricte
+    const email = req.body.email ? String(req.body.email).trim() : null;
+    if (email === '') email = null;  // ← CHAINES VIDES → null
+
     const proprietaire = await Proprietaire.create({
       nom: req.body.nom,
       sexe: req.body.sexe,
       telephone: req.body.telephone,
-      email: req.body.email || null,
+      email: email,  // ✅ SAFE
       quartier: req.body.quartier || null,
       password: hashedPassword,
       photo: photoUrl,
       isActive: true
     });
 
-    // Email...
-    await sendEmail({ /* ... */ });
+    const urlLogin = 'https://longrich.vercel.app/proprietaires/login';
+
+    // ✅ Email OPTIONNEL - ne crash PAS
+    if (email) {
+      try {
+        await sendProprietaireCredentials({
+          email: email,
+          nom: proprietaire.nom,
+          telephone: proprietaire.telephone,
+          password: defaultPassword,
+          urlLogin: urlLogin
+        });
+        console.log(`✅ Email envoyé à ${email}`);
+      } catch (emailError) {
+        console.warn('⚠️ Email échoué mais proprio créé:', emailError.message);
+      }
+    } else {
+      console.log('ℹ️ Pas d\'email fourni - credentials non envoyés');
+    }
 
     console.log(`✅ Créé: ${proprietaire.nom}`);
-    res.status(201).json(proprietaire);
+    res.status(201).json({
+      ...proprietaire.toJSON(),
+      message: email 
+        ? "✅ Propriétaire créé ! Email envoyé." 
+        : "✅ Propriétaire créé (sans email).",
+      info: "ℹ️ Pas encore de boutique associée."
+    });
+
   } catch (error) {
     console.error('❌ CREATE ERROR:', error);
     res.status(500).json({ error: error.message });
   }
 };
+
+
+
 
 // ✅ REMPLACÉ - Nouvelle version
 const updateProprietaire = async (req, res) => {
