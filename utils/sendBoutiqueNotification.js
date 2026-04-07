@@ -1,17 +1,3 @@
-const nodemailer = require('nodemailer');
-require('dotenv').config();
-
-const transporter = nodemailer.createTransport({
-  host: process.env.EMAIL_HOST,
-  port: process.env.EMAIL_PORT,
-  secure: false,
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-  tls: { rejectUnauthorized: false }
-});
-
 const sendBoutiqueNotification = async ({ email, nom, telephone, nomBoutique, urlBoutique }) => {
   const mailOptions = {
     from: `Mega Ecommerce <${process.env.EMAIL_USER}>`,
@@ -55,7 +41,7 @@ const sendBoutiqueNotification = async ({ email, nom, telephone, nomBoutique, ur
         
         <div style="background: #e9ecef; padding: 1rem; border-radius: 8px; margin-top: 2rem;">
           <p style="color: #6c757d; font-size: 0.9rem; margin: 0;">
-            <strong>💡 Important :</strong> Partagez votre lien mega/XXXX avec vos clients pour commencer les ventes !
+            <strong>💡 Important :</strong> Partagez votre lien <strong>mega/${urlBoutique}</strong> avec vos clients pour commencer les ventes !
           </p>
         </div>
       </div>
@@ -69,5 +55,3 @@ const sendBoutiqueNotification = async ({ email, nom, telephone, nomBoutique, ur
 
   return transporter.sendMail(mailOptions);
 };
-
-module.exports = { sendBoutiqueNotification };

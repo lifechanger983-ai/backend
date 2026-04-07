@@ -233,3 +233,127 @@
 {"level":"info","message":"✅ Boutique créée: ONANA (mich)","timestamp":"2026-04-07T00:09:26.858Z"}
 {"duration":6931.06,"ip":"::1","level":"warn","message":"PERF ISSUE:","method":"POST","responseSize":"472","status":201,"timestamp":"2026-04-07T00:09:26.863Z","url":"/api/admin/boutiques","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
 {"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-07T00:09:26.935Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-07T00:27:25.906Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-07T00:27:25.991Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-07T00:27:29.435Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:39.362Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:39.389Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:40.738Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:40.744Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:42.012Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:42.028Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:43.458Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:43.466Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:44.865Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:44.870Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:46.162Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:46.169Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:47.561Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:47.571Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:48.963Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:48.967Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:50.531Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:50.536Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:51.945Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:51.949Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:53.342Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:53.359Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:54.911Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:54.915Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:56.458Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:56.503Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:58.066Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:58.072Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:59.532Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:02:59.543Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:01.407Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:01.469Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:03.211Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:03.225Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:05.233Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:05.239Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:06.708Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:06.713Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:09.468Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:09.485Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:11.929Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:11.931Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:13.383Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:13.385Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:14.782Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:14.791Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:16.240Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:16.242Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:17.744Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:17.746Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:19.391Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:19.396Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:20.966Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:20.969Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:22.268Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:22.273Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:23.633Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:23.637Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:24.984Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:24.986Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:26.561Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:27.067Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:28.201Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:28.203Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:29.543Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:29.570Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:30.809Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:30.811Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:32.355Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:32.362Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:33.755Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:33.760Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:35.190Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:35.195Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:36.700Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:36.705Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:38.131Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:38.136Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:39.592Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:39.595Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:41.090Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:41.092Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:42.563Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:42.575Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:44.621Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:44.623Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:46.186Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:46.210Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:48.191Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:48.200Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:49.700Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:49.709Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:51.033Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:51.070Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:52.448Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:52.453Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:53.725Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:53.727Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:55.086Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:03:55.088Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:22:18.293Z"}
+{"level":"warn","message":"🚨 Accès /register bloqué - Super Admin existe déjà","timestamp":"2026-04-07T01:22:18.399Z"}
+{"level":"info","message":"🔐 Login Super Admin: onanamichel47@gmail.com","timestamp":"2026-04-07T12:10:03.245Z"}
+{"ip":"::1","level":"warn","message":"🚨 Accès /register bloqué","reason":"registerLocked","timestamp":"2026-04-07T12:10:37.434Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"warn","message":"🚨 Accès /register bloqué","reason":"registerLocked","timestamp":"2026-04-07T12:10:37.442Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"🔐 Login Super Admin: onanamichel47@gmail.com","timestamp":"2026-04-07T12:10:57.575Z"}
+{"ip":"::1","level":"warn","message":"🚨 Accès /register bloqué","reason":"registerLocked","timestamp":"2026-04-07T12:12:50.851Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"warn","message":"🚨 Accès /register bloqué","reason":"registerLocked","timestamp":"2026-04-07T12:12:50.857Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"🔐 Login Super Admin: onanamichel47@gmail.com","timestamp":"2026-04-07T12:17:39.220Z"}
+{"level":"info","message":"🔐 Login Super Admin: onanamichel47@gmail.com","timestamp":"2026-04-07T12:19:45.180Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-07T12:20:38.667Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-07T12:20:38.696Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-07T12:20:41.752Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-07T12:20:41.813Z"}
+{"ip":"::1","level":"warn","message":"🚨 Accès /register bloqué","reason":"registerLocked","timestamp":"2026-04-07T12:53:10.129Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"warn","message":"🚨 Accès /register bloqué","reason":"registerLocked","timestamp":"2026-04-07T12:53:10.234Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-07T12:53:25.143Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-07T12:53:25.146Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-07T12:53:31.447Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-07T12:53:31.497Z"}
+{"level":"info","message":"✅ Propriétaires: 2","timestamp":"2026-04-07T12:53:36.107Z"}

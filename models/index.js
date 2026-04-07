@@ -11,7 +11,11 @@ const SuperAdmin = sequelize.define('SuperAdmin', {
   photo: { type: DataTypes.STRING, allowNull: true },
   isActive: { type: DataTypes.BOOLEAN, defaultValue: true },
   lastLogin: { type: DataTypes.DATE, defaultValue: DataTypes.NOW },
-  createdBy: { type: DataTypes.STRING, defaultValue: 'SYSTEM' }
+  createdBy: { type: DataTypes.STRING, defaultValue: 'SYSTEM' },
+
+  // ✅ NOUVEAU CHAMP
+  registerLocked: { type: DataTypes.BOOLEAN, defaultValue: false, comment: 'Verrouillage accès /admin/register' }
+
 }, { tableName: 'super_admins', timestamps: true });
 
 const LogsSecurite = sequelize.define('LogsSecurite', {
