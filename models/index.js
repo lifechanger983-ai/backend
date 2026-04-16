@@ -135,12 +135,22 @@ const Commande = sequelize.define('Commande', {
   id: { type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4, primaryKey: true },
   clientId: { type: DataTypes.UUID, allowNull: false },
   boutiqueId: { type: DataTypes.UUID, allowNull: false },
+  proprietaireId: { type: DataTypes.UUID, allowNull: true },  // ✅ TEMPORAIREMENT true // ✅ AJOUTÉ
   typeService: { type: DataTypes.ENUM('produit_simple', 'pack_sante'), allowNull: false },
   produits: { type: DataTypes.JSON, allowNull: false },
   prixTotal: { type: DataTypes.DECIMAL(10, 2), allowNull: false },
   recuCommande: { type: DataTypes.STRING, allowNull: true },
   livraisonGratuite: { type: DataTypes.BOOLEAN, defaultValue: false },
-  statut: { type: DataTypes.ENUM('en_attente', 'confirmee', 'payee', 'livree', 'annulee'), defaultValue: 'en_attente' }
+  quartierLivraison: { type: DataTypes.STRING, allowNull: true }, // ✅ AJOUTÉ
+  adresseLivraison: { type: DataTypes.TEXT, allowNull: true }, // ✅ AJOUTÉ
+  telephoneClient: { type: DataTypes.STRING, allowNull: true }, // ✅ AJOUTÉ
+  notes: { type: DataTypes.TEXT, allowNull: true }, // ✅ AJOUTÉ
+  latitude: { type: DataTypes.DECIMAL(10, 8), allowNull: true }, // ✅ AJOUTÉ
+  longitude: { type: DataTypes.DECIMAL(11, 8), allowNull: true }, // ✅ AJOUTÉ
+  statut: { 
+    type: DataTypes.ENUM('brouillon', 'en_attente', 'confirmee', 'payee', 'livree', 'annulee'), 
+    defaultValue: 'brouillon' // ✅ MODIFIÉ
+  }
 }, { tableName: 'commandes', timestamps: true });
 
 const AutreProduitBoutique = sequelize.define('AutreProduitBoutique', {
@@ -193,6 +203,8 @@ Livraison.belongsTo(Commande, { foreignKey: 'commandeId', as: 'saCommande' });
 
 AdminSecondaire.hasMany(Livraison, { foreignKey: 'livreurId', as: 'mesLivraisons' });
 Livraison.belongsTo(AdminSecondaire, { foreignKey: 'livreurId', as: 'monLivreur' });
+
+
 
 // AJOUTEZ dans module.exports :
 module.exports = { 

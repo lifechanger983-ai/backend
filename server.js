@@ -1,82 +1,61 @@
-require('dotenv').config();
 const express = require('express');
-const http = require('http');
-const { sequelize, connect } = require('./config/database');
-const securityMiddleware = require('./config/security');
-const logger = require('./config/logger');
-const monitoringRawData = require('./middleware/monitoringRawData');
-const gestionErreurs = require('./middleware/erreursGestion');
-const detectAttaques = require('./middleware/detectAttaques').detectAttaques;
-const initSockets = require('./config/socket');
+const cors = require('cors');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
+const morgan = require('morgan');
+const { sequelize } = require('./models');
 
-// ✅ VAGUE 5 : Routes Client (PUBLIQUES)
+const adminRoutes = require('./routes/adminRoutes');
 const clientRoutes = require('./routes/clientRoutes');
 
-// ✅ Routes Admin (PROTÉGÉES)
-const adminRoutes = require('./routes/adminRoutes');
+const erreursGestion = require('./middleware/erreursGestion');
+const authAdmin = require('./middleware/auth');
+const detectAttaques = require('./middleware/detectAttaques');
+const monitoringRawData = require('./middleware/monitoringRawData');
 
 const app = express();
-const server = http.createServer(app);
-const PORT = process.env.PORT || 5000;
 
-// =========================================
-// 🛡️ MIDDLEWARES SÉCURITÉ (ORDRE CRITIQUE)
-// =========================================
-app.use(detectAttaques);  // ✅ 1er : Détecte attaques
-securityMiddleware.forEach(middleware => app.use(middleware));  // ✅ Helmet, CORS, etc.
+app.use(cors({
+  origin: [
+    process.env.FRONTEND_LOCAL_URL || 'http://localhost:5173',
+    process.env.FRONTEND_VERCEL_URL || 'https://longrich.vercel.app'
+  ],
+  credentials: true
+}));
+
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
-app.use('/logs', express.static('logs'));
-app.use(monitoringRawData);  // ✅ Monitoring perf
 
-// =========================================
-// 🩺 HEALTHCHECK (Railway/Heroku)
-// =========================================
-app.get('/health', (req, res) => res.status(200).json({ status: 'OK', timestamp: new Date().toISOString() }));
+app.use(helmet());
+app.use(morgan('combined'));
 
-// =========================================
-// 🚀 ROUTES (ORDRE IMPORTANT)
-// =========================================
-// ✅ 1. Routes CLIENT PUBLIQUES (Vague 5)
-app.use('/api', clientRoutes);
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  message: { error: 'Trop de requêtes' }
+});
+app.use('/api/', limiter);
 
-// ✅ 2. Routes ADMIN PROTÉGÉES
-app.use('/api/admin', adminRoutes);
+app.use(detectAttaques.detectAttaques);
+app.use(monitoringRawData);
 
-// =========================================
-// ❌ 404 + ERREURS GLOBALES
-// =========================================
-app.use('*', (req, res) => {
-  res.status(404).json({ error: 'Route non trouvée' });
+// ✅ ROUTES ADAPTÉES AU FRONTEND ACTUEL
+app.use('/api', clientRoutes);        // ✅ /api/boutique/rita ← Frontend actuel
+app.use('/api/admin', adminRoutes);   // Admin inchangé
+
+app.get('/health', (req, res) => {
+  res.json({ status: 'OK', timestamp: new Date().toISOString() });
 });
 
-// ✅ Gestion erreurs globale (DERNier)
-app.use(gestionErreurs);
+app.use(erreursGestion);
 
-// =========================================
-// 🗄️ INITIALISATION DB + SOCKETS
-// =========================================
-const initApp = async () => {
-  try {
-    await connect();
-    const io = initSockets(server, securityMiddleware);
-    server.io = io;
-    
-    server.listen(PORT, () => {
-      console.log(`\n🚀 SERVEUR MEGA ECOMMERCE v5 ✅`);
-      console.log(`📍 PORT: ${PORT}`);
-      console.log(`🛡️ Sécurité Watchdog ACTIVÉ`);
-      console.log(`🔌 Socket /admin-watchdog PRÊT`);
-      console.log(`🌐 API Client: /api/boutique/:url ✅`);
-      console.log(`🔐 API Admin: /api/admin/* 🔒`);
-      console.log(`\n`);
-    });
-  } catch (error) {
-    logger.error('❌ ÉCHEC Démarrage Serveur:', error);
-    process.exit(1);
-  }
-};
+const PORT = process.env.PORT || 5000;
 
-initApp();
-
-module.exports = server; // Export pour controllers
+sequelize.sync({ alter: true }).then(() => {
+  console.log('✅ DB connectée');
+  app.listen(PORT, () => {
+    console.log(`🚀 Serveur ${PORT} ✅`);
+    console.log(`🛒 GET http://localhost:${PORT}/api/boutique/rita`);
+    console.log(`🛒 POST http://localhost:${PORT}/api/commandes/creer`);
+  });
+}).catch(err => console.error('❌ DB:', err));
